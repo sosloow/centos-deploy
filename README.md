@@ -1,4 +1,4 @@
-## подготовка 64-битной centOS 5.1 для node.js сервера
+## подготовка 64-битной centOS 6 для node.js сервера
 
 1. `useradd someone sudo`
 2. `passwd someone`
