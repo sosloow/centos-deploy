@@ -15,5 +15,5 @@
 13. `sudo /sbin/service nginx start`
 14. `sudo /sbin/chkconfig httpd off`
 15. `sudo /sbin/service httpd stop`
-16. `sudo npm install -g forever coffee-script`
+16. `sudo npm install -g forever coffee-script bower grunt-cli`
 17. `scp ./node.conf root@remote:/etc/nginx/conf.d`
