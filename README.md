@@ -6,7 +6,7 @@
 4. `curl -sL https://rpm.nodesource.com/setup | bash -`
 5. `scp ./yum.repos.d/* root@remote:/etc/yum.repos.d`
 6. `sudo yum update`
-7. `sudo yum install git mongodb-org nodejs nginx`
+7. `sudo yum install gcc gcc-c++ make openssl-devel git mongodb-org nodejs nginx`
 8. `sudo /sbin/chkconfig --add mongod`
 9. `sudo /sbin/chkconfig mongod on`
 10. `sudo /sbin/service mongod start`
