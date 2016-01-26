@@ -1,8 +1,7 @@
-## подготовка 64-битной centOS 6 для node.js сервера
+## подготовка 64-битной centOS 7 для node.js сервера
 
 1. `useradd someone sudo`
 2. `passwd someone`
-3. `sudo yum install epel-release`
 4. `curl -sL https://rpm.nodesource.com/setup | bash -`
 5. `scp ./yum.repos.d/* root@remote:/etc/yum.repos.d`
 6. `sudo yum update`
@@ -17,3 +16,5 @@
 15. `sudo /sbin/service httpd stop`
 16. `sudo npm install -g forever coffee-script bower grunt-cli`
 17. `scp ./node.conf root@remote:/etc/nginx/conf.d`
+19. `sudo firewall-cmd --zone=public --add-port=80/tcp --permanent`
+20. `sudo firewall-cmd --reload`
