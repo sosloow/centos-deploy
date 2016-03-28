@@ -1,10 +1,8 @@
 ## подготовка 64-битной centOS 7 для node.js сервера
 
-1. `useradd someone sudo`
-2. `passwd someone`
-4. `curl -sL https://rpm.nodesource.com/setup | bash -`
-5. `scp ./yum.repos.d/* root@remote:/etc/yum.repos.d`
-6. `sudo yum update`
+1. `useradd user`
+2. `passwd user`
+4. `curl -sL https://rpm.nodesource.com/setup_5.x | bash -`
 7. `sudo yum install gcc gcc-c++ make openssl-devel git mongodb-org nodejs nginx`
 8. `sudo /sbin/chkconfig --add mongod`
 9. `sudo /sbin/chkconfig mongod on`
