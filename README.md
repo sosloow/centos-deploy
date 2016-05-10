@@ -12,4 +12,4 @@
 17. `scp ./node.conf root@remote:/etc/nginx/conf.d`
 19. `sudo firewall-cmd --zone=public --add-port=80/tcp --permanent`
 20. `sudo firewall-cmd --reload`
-21. `sudo setenforce 0`
+21. http://xmodulo.com/how-to-disable-selinux.html
