@@ -3,6 +3,7 @@
 1. `useradd user`
 2. `passwd user`
 4. `curl -sL https://rpm.nodesource.com/setup_6.x | bash -`
+5. (подключаем репозиторий mongodb)[https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/#for-the-latest-stable-release-of-mongodb]
 7. `sudo yum install gcc gcc-c++ make openssl-devel git mongodb-org nodejs nginx`
 8. `sudo /sbin/chkconfig --add mongod`
 9. `sudo /sbin/chkconfig mongod on`
