@@ -14,7 +14,7 @@
 19. `sudo firewall-cmd --zone=public --add-port=80/tcp --permanent` (разрешаем и любые другие порты, которые могут понадобиться)
 20. `sudo firewall-cmd --reload`
 21. [отключаем selinux](http://xmodulo.com/how-to-disable-selinux.html)
-22. `pm2 start start path/to/pm2.json`
+22. `pm2 start path/to/pm2.json`
 23. `pm2 save`
 24. `sudo PM2_HOME=/home/$(whoami)/.pm2 pm2 startup centos -u $(whoami)`
 25. `su -c "chmod +x /etc/init.d/pm2-init.sh; chkconfig --add pm2-init.sh"` (именно под рутом (почему-то))
