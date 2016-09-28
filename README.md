@@ -17,5 +17,5 @@
 22. `pm2 start path/to/pm2.json`
 23. `pm2 save`
 24. `sudo PM2_HOME=/home/$(whoami)/.pm2 pm2 startup centos -u $(whoami)`
-25. `su -c "chmod +x /etc/init.d/pm2-init.sh; chkconfig --add pm2-init.sh"` (именно под рутом (почему-то))
+25. `su -c "chmod +x /etc/init.d/pm2-init.sh; chkconfig --add pm2-init.sh"`
 26. настройка бекапов монго: нужно скопировать файл `automongobackup.sh` в `/etc/cron.daily`. Если требуется отправка отчетов на почту, нужно поставить почтовую программу (`sudo yum install mailx`) и указать свой имейл в файле скрипта
