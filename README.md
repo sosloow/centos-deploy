@@ -1,6 +1,6 @@
 ## подготовка 64-битной centOS 7 для node.js сервера
 
-1. `useradd user`
+1. `useradd user -G wheel`
 2. `passwd user`
 4. `curl -sL https://rpm.nodesource.com/setup_6.x | bash -`
 5. [подключаем репозиторий mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/#for-the-latest-stable-release-of-mongodb)
