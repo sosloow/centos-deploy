@@ -6,10 +6,11 @@
 5. [подключаем репозиторий mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/#for-the-latest-stable-release-of-mongodb)
 6. [ставим redis](http://sharadchhetri.com/2014/10/04/install-redis-server-centos-7-rhel-7/)
 7. `sudo yum install -y gcc gcc-c++ make openssl-devel git mongodb-org nodejs nginx ImageMagick ImageMagick-devel`
-8. `sudo /sbin/chkconfig --add mongod`
-9. `sudo /sbin/chkconfig mongod on`
-10. `sudo /sbin/service mongod start`
-13. `sudo /sbin/service nginx start`
+9. `sudo systemctl start mongod.service`
+10. `sudo systemctl enable mongod.service`
+11. `sudo systemctl start redis.service`
+12. `sudo systemctl enable redis.service`
+13. `sudo systemctl start nginx.service`
 16. `sudo npm install -g pm2 coffee-script bower grunt-cli`
 17. `scp ./node.conf root@remote:/etc/nginx/conf.d` (и отредактировать под свои нужды)
 19. `sudo firewall-cmd --zone=public --add-port=80/tcp --permanent` (разрешаем и любые другие порты, которые могут понадобиться)
