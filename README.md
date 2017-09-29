@@ -5,7 +5,7 @@
 4. `curl -sL https://rpm.nodesource.com/setup_8.x | bash -`
 5. [подключаем репозиторий mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/#for-the-latest-stable-release-of-mongodb)
 6. [ставим redis](http://sharadchhetri.com/2014/10/04/install-redis-server-centos-7-rhel-7/)
-7. `sudo yum install -y epel-release gcc gcc-c++ make openssl-devel git mongodb-org nodejs nginx ImageMagick ImageMagick-devel redis certbot-nginx`
+7. `sudo yum install -y epel-release gcc gcc-c++ make openssl-devel git mongodb-org nodejs nginx redis certbot-nginx GraphicsMagick`
 9. `sudo systemctl start mongod.service`
 10. `sudo systemctl enable mongod.service`
 11. `sudo systemctl start redis.service`
